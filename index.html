@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>3D Cloud Field Visualization Overview</title>
+  <meta name="author" content="Evan Rose" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="page/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap custom CSS -->
+  <link href="page/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
+    <span class="navbar-text">Low Resolution example of the Global GEO-Stitch 3D cloud field, by cloud type.</i> (2023)
+    </span>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://bear.cira.colostate.edu/evrose54/3d-cloud-visualization">Source code</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 text-center">
+          <h1 class="font-weight-light">Low Resolution example of the Global GEO-Stitch 3D cloud field, by cloud type.
+          </h1>
+          <p class="lead">Interactive zoom and rotatable 3D visualisation (it may take a few minutes to load)</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="pretty container-fluid d-flex justify-content-center">
+    <div class="row">
+      <div class="col-36">
+        <div class="card">
+          <div class="card-body" align="center">
+            <!-- <iframe class="iframe3d col-lg-36" src="page/view_scene.html?fileURL=../plots/trap1e_grcs_110d_view3d.vtkjs"></iframe> -->
+            <!-- <iframe src="https://app.vectary.com/p/59KioRi5xAGJqP508amZM1" frameborder="0" width="100%"
+              height="480"></iframe> -->
+            <iframe class="iframe3d col-lg-36" src="page/global_model/"></iframe>
+            <!-- <iframe class="iframe3d col-lg-36" src="page/view_scene.html?fileURL=all_mesh_sample.html"></iframe> -->
+            <div>
+              The <i>Global GEO-Stitch 3D Cloud Field</i> covers the whole Earth, colored by cloud type. Water clouds
+              are <i>blue</i>, Supercooled are <i>lightseagreen</i>, Mixed are <i>paleturquoise</i>, and Ice are
+              <i>ghostwhite</i>.
+              The graphic shows cloud condensate colored by cloud type.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <!-- Grid row-->
+      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+        <!-- Grid column -->
+        <div class="col-md-6">
+          <h6>
+            <a href="https://docs.pyvista.org/">Made with PyVista</a>
+          </h6>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="page/vendor/jquery/jquery.slim.min.js"></script>
+  <script src="page/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
