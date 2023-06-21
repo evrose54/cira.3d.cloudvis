@@ -49,9 +49,9 @@
             <!-- <iframe class="iframe3d col-lg-36" src="./page/global_model/"></iframe> -->
             <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
             <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-            <model-viewer src="page/global_model/test_global.glb" auto-rotate poster preload ar camera-controls
-              shadow-intensity="1" shadow-softness="1" style="width:1500px;height:1000px" ; quick-look-browsers
-              unstable-webxr>
+            <model-viewer id="global-3d-model" src="./page/global_model/test_global.glb" loading="eager" auto-rotate
+              poster="./page/global_model/poster.webp" camera-controls shadow-intensity="1"
+              style="width:1500px;height:1000px"></model-viewer>
           </div>
         </div>
       </div>
