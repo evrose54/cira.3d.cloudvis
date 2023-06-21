@@ -46,10 +46,13 @@
       <div class="col-36">
         <div class="card">
           <div class="card-body" align="center">
+            <!-- <iframe class="iframe3d col-lg-36" src="page/view_scene.html?fileURL=page/global_model/"></iframe> -->
             <!-- <iframe class="iframe3d col-lg-36" src="./page/global_model/"></iframe> -->
+            <!-- <model-viewer id="global-3d-model" src="./page/global_model/test_global.glb" ar auto-rotate -->
             <model-viewer id="global-3d-model" src="./page/global_model/test_global.glb" ar auto-rotate
               poster="./page/global_model/poster.webp" camera-controls shadow-intensity="1"
-              style="width:1500px;height:1000px"></model-viewer>
+              style="width:75vw;height:50vw"></model-viewer>
+            <!-- style="width:1500px;height:1000px"></model-viewer> -->
           </div>
         </div>
       </div>
@@ -85,10 +88,10 @@
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
   <!-- Loads model-viewer for older browsers -->
   <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-  <script>
+  <!-- <script>
     self.ModelViewerElement = self.ModelViewerElement || {};
     self.ModelViewerElement.meshoptDecoderLocation = 'https://cdn.jsdelivr.net/npm/meshoptimizer/meshopt_decoder.js';
-  </script>
+  </script> -->
 
 
 </body>
