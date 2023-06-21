@@ -14,6 +14,7 @@
   <link href="page/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap custom CSS -->
   <link href="page/custom.css" rel="stylesheet">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 
 </head>
 
@@ -47,9 +48,7 @@
         <div class="card">
           <div class="card-body" align="center">
             <!-- <iframe class="iframe3d col-lg-36" src="./page/global_model/"></iframe> -->
-            <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-            <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-            <model-viewer id="global-3d-model" src="./page/global_model/test_global.glb" loading="eager" auto-rotate
+            <model-viewer id="global-3d-model" src="./page/global_model/test_global.glb" loading="eager" ar auto-rotate
               poster="./page/global_model/poster.webp" camera-controls shadow-intensity="1"
               style="width:1500px;height:1000px"></model-viewer>
           </div>
